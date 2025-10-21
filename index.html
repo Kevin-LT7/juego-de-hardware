@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contenedor">
+        <div><a href="1.html"><h2>Comenzar</h2></a></div>
+        <div><h2 id="infoBtn">Información</h2></div>
+        <div>
+            <p id="mensaje" style="display:none;">
+                Este juego trata de saber que componente de la computadora se esta mencionando al atinar a todos se gana el juego, tambien con cada error se puede volver a jugar pero desde el inicio.
+            </p>
+        </div>
+    </div>
+    <script>
+        const botonInfo = document.getElementById("infoBtn");
+        const mensaje = document.getElementById("mensaje");
+
+        botonInfo.addEventListener("click", () => {
+            // alternar mostrar/ocultar texto
+            if (mensaje.style.display === "none") {
+                mensaje.style.display = "block";
+            } else {
+                mensaje.style.display = "none";
+            }
+        });
+    </script>
+</body>
+</html>
